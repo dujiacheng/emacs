@@ -7,10 +7,15 @@
 ;;最大化或恢复当前窗口
 ;;(toggle-frame-maximized)
 
+;;调整窗口的位置 数值越小 越往上
+(setq default-frame-alist '((top . 40)))
+
 
 ;; 更改显示字体大小 16pt
 ;; http://stackoverflow.com/questions/294664/how-to-set-the-font-size-in-emacs
-(set-face-attribute 'default nil :height 160)
+(set-face-attribute 'default nil :height 150)
+
+
 
 ;;让鼠标滚动更好用
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))

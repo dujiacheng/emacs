@@ -1,6 +1,6 @@
 
 
-(server-mode 1)
+;;(server-mode 1)
 
 (electric-pair-mode t)
 
