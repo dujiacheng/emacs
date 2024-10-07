@@ -13,5 +13,6 @@ C-; embark-act  可以在当前上下文中显示一个可用命令的菜单。
 举例2 C-x C-h  展示了系统绑定的快捷键，输入文本 如 switch buffer 回车就直接运行了 by  embark-prefix-help-command
  
 C-s  consult-line搜索
+M-s i" 'consult-imenu  ;; 快速导航到当前缓冲区中定义的项（如函数、变量等）的命令
 
 embark-consult 结合使用，以增强搜索和选择的体验。

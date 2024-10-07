@@ -21,7 +21,7 @@
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 
 (global-set-key (kbd "C-x b") 'consult-buffer)
-(global-set-key (kbd "M-s i") 'consult-imenu) ;;swiper
+(global-set-key (kbd "M-s i") 'consult-imenu) ;; 快速导航到当前缓冲区中定义的项（如函数、变量等）的命令
 
 (global-set-key (kbd "C-;") 'embark-act)
 (with-eval-after-load 'embark  
