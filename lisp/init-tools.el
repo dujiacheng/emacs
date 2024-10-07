@@ -1,7 +1,6 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/awesome-tab"))
 
 (require 'awesome-tab)
-
 (awesome-tab-mode t)
 
 (defun awesome-tab-buffer-groups ()
@@ -52,7 +51,7 @@ Other buffer group by `awesome-tab-get-group-name' with project name."
   ;; (advice-add 'exit-minibuffer :after #'disable-py-search)
 (add-hook 'minibuffer-exit-hook 'disable-py-search)
 
-;;modeline上显示我的所有的按键和执行的命令
+;;modeline上显示我的所有的按键和执行的命令，28.1安装有问题
 ;;(package-install 'keycast)
 ;;(keycast-mode 1)
 

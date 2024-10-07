@@ -1,25 +1,22 @@
 (package-install 'company)
 (global-company-mode 1)
-(setq company-minimum-prefix-length 1)
-(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 1) ;;打一个字符就补全
+(setq company-idle-delay 0) ;;降低补全的延迟 
+(setq tab-always-indent 'complete) ;; 在不完全的变量后面 按tab会出现complete这个buffer
 
-
-(setq tab-always-indent 'complete)
-
-
-
-(package-install 'vertico)
+(package-install 'vertico) ;;M-x的时候 从水平补全变成垂直，C-x C-f 也是一样
 (vertico-mode t)
 
-(package-install 'orderless)
-(setq completion-styles '(orderless))
+(package-install 'orderless) 
+(setq completion-styles '(orderless))  ;;M-x的时候 支持模糊匹配 
 
-(package-install 'marginalia)
+(package-install 'marginalia)  ;; mini buffer 增强,命令的注释 C-h v ，C-x C-f 也会被增强到 文件大小修改时间
 (marginalia-mode t)
 
 (package-install 'embark)
 
-
+;;系统字段的C-x C-h  打开的help buffer 不能执行命令，只能看到什么快捷键绑了什么函数
+;;embark的help 打开后 可以输入文本匹配命令，回车还能运行，不用记忆快捷键了。
 (setq prefix-help-command 'embark-prefix-help-command)
 
 (package-install 'consult)

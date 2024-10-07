@@ -9,9 +9,4 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-
-
-
-
-
 (provide 'init-packages)

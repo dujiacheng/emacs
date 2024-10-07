@@ -1,12 +1,6 @@
-
-
 ;;(server-mode 1)
-
 (electric-pair-mode t)
-
-
 (show-paren-mode t)
-
 
 (setq make-backup-files nil)
 
@@ -14,10 +8,7 @@
 (recentf-mode 1)
 (setq recentf-max-menu-item 10)
 
-
-
 (delete-selection-mode t)
-
 
 (progn
 	(defvar emax-root (concat (expand-file-name "~") "/emax"))
@@ -34,19 +25,12 @@
 	(setq exec-path (cons  emacsd-bin exec-path))
 	(setenv "PATH" (concat emacsd-bin  ";" (getenv "PATH")))
 
-	;;可选安装msys64
-	;;下载地址: http://repo.msys2.org/mingw/sources/
+	;;可选安装msys64下载地址: http://repo.msys2.org/mingw/sources/
 	(setenv "PATH" (concat "C:\\msys64\\usr\\bin;C:\\msys64\\mingw64\\bin;" (getenv "PATH")))
-
 	;; (dolist (dir '("~/emax/" "~/emax/bin/" "~/emax/bin64/" "~/emax/lisp/" "~/emax/elpa/"))
 	;;   (add-to-list 'load-path dir))
 	)
 ;; grep < ack < ag < ripgrep (rg)
-
-;;hello2
-
-
-
 
 ;;ivy
 ;; Encoding
@@ -56,8 +40,5 @@
 
 (set-language-environment 'chinese-gbk)
 (prefer-coding-system 'utf-8-auto)
-
-
-
 
 (provide 'init-basic)
