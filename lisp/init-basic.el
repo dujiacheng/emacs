@@ -6,9 +6,9 @@
 
 (require 'recentf)
 (recentf-mode 1)
-(setq recentf-max-menu-item 10)
+(setq recentf-max-menu-item 10) ;; 最近打开的10个文件, consult-buffer 会去读取recentf文件,然后展示
 
-(delete-selection-mode t)
+(delete-selection-mode t) ;;选中 文字输入能删除原有的字符
 
 (progn
 	(defvar emax-root (concat (expand-file-name "~") "/emax"))
