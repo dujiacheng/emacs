@@ -10,11 +10,11 @@
 
 (delete-selection-mode t)
 
-(progn
+(progn  
 	(defvar emax-root (concat (expand-file-name "~") "/emax"))
 	(defvar emax-bin (concat emax-root "/bin"))
 	(defvar emax-bin64 (concat emax-root "/bin64"))
-
+	;; 解压emax到 C:\Users\cleve\AppData\Roaming 
 	(setq exec-path (cons emax-bin exec-path))
 	(setenv "PATH" (concat emax-bin ";" (getenv "PATH")))
 
