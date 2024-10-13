@@ -1,4 +1,4 @@
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/awesome-tab"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/awesome-tab"));; 先加载
 
 (require 'awesome-tab)
 (awesome-tab-mode t)
@@ -6,8 +6,8 @@
 (defun awesome-tab-buffer-groups ()
 "`awesome-tab-buffer-groups' control buffers' group rules.
 Group awesome-tab with mode if buffer is derived from `eshell-mode' `emacs-lisp-mode' `dired-mode' `org-mode' `magit-mode'.
-All buffer name start with * will group to \"Emacs\".
-Other buffer group by `awesome-tab-get-group-name' with project name."
+All buffer name start with * will group to \"Emacs\".    特定的mode 可以单独归到一个buffer内
+Other buffer group by `awesome-tab-get-group-name' with project name. 用后缀名来分组，比如.txt的都在一个buffer内。"
 (list
 (cond
     ((or (string-equal "*" (substring (buffer-name) 0 1))

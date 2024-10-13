@@ -16,3 +16,5 @@ C-s  consult-line搜索
 M-s i" 'consult-imenu  ;; 快速导航到当前缓冲区中定义的项（如函数、变量等）的命令
 
 embark-consult 结合使用，以增强搜索和选择的体验。
+
+M-x info 选择Emacs Lisp Intro
