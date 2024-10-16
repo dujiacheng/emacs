@@ -34,9 +34,9 @@
         consult-async-refresh-delay  0.15
         consult-async-input-throttle 0.2
         consult-async-input-debounce 0.1)
-    ))
+    )) ;;最小2个字符开始查找
 
-
+;; 这一堆批量替换用
 (package-install 'embark-consult)
 (package-install 'wgrep)
 (setq wgrep-auto-save-buffer t)
@@ -45,6 +45,8 @@
   '(eval-after-load 'embark
      '(progn
 	(require 'embark-consult)
-	(add-hook 'embark-collect-mode-hook #'consult-preview-at-point-mode))))
+	(add-hook 'embark-collect-mode-hook #'consult-preview-at-point-mode)))) ;; embark-collect-mode打开时 再打开一个consult-preview-at-point  mode
+;; 这一堆批量替换用
+
 
 (provide 'init-completion)

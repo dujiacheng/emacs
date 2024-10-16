@@ -31,8 +31,8 @@ Other buffer group by `awesome-tab-get-group-name' with project name. 用后缀�
      (awesome-tab-get-group-name (current-buffer))))))
 
 
-(package-install 'pyim)
-
+(package-install 'pyim);;拼音
+;;拼音缩写来搜索 没成功
 (defun eh-orderless-regexp (orig_func component)
     (let ((result (funcall orig_func component)))
       (pyim-cregexp-build result)))
@@ -49,7 +49,7 @@ Other buffer group by `awesome-tab-get-group-name' with project name. 用后缀�
         (advice-remove 'orderless-regexp #'eh-orderless-regexp)))
 
   ;; (advice-add 'exit-minibuffer :after #'disable-py-search)
-(add-hook 'minibuffer-exit-hook 'disable-py-search)
+(add-hook 'minibuffer-exit-hook 'disable-py-search) ;;取消拼音缩写搜索模式
 
 ;;modeline上显示我的所有的按键和执行的命令，28.1安装有问题
 ;;(package-install 'keycast)

@@ -14,21 +14,21 @@
 (global-set-key (kbd "s-h") 'suspend-frame) ;最小化
 (global-set-key (kbd "s-s") 'consult-line) ;搜索
 
-(global-set-key (kbd "s-p") 'toggle-chinese-search)
+(global-set-key (kbd "s-p") 'toggle-chinese-search) ;;中文搜索 好像没啥用
 
 (global-set-key (kbd "C-h C-f") 'find-function)
 (global-set-key (kbd "C-h C-v") 'find-variable)
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 
-(global-set-key (kbd "C-x b") 'consult-buffer)
+(global-set-key (kbd "C-x b") 'consult-buffer) ;;替代自带buffer
 (global-set-key (kbd "M-s i") 'consult-imenu) ;; 快速导航到当前缓冲区中定义的项（如函数、变量等）的命令
 
-(global-set-key (kbd "C-;") 'embark-act)
+(global-set-key (kbd "C-;") 'embark-act)   
 (with-eval-after-load 'embark  
-  (define-key embark-file-map (kbd "E") #'consult-directory-externally))
-(define-key minibuffer-local-map (kbd "C-c C-e") 'embark-export-write)
+  (define-key embark-file-map (kbd "E") #'consult-directory-externally)) ;; 用windows explore.exe 打开文件夹
+(define-key minibuffer-local-map (kbd "C-c C-e") 'embark-export-write);;批量替换 
 
-(global-set-key (kbd "C-c p f") 'project-find-file)
+(global-set-key (kbd "C-c p f") 'project-find-file) ;;当前文件夹 找文件
 (global-set-key (kbd "C-c p s") 'consult-ripgrep)
 
 
