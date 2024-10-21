@@ -39,3 +39,21 @@ M-x info 选择Emacs Lisp Intro
 M-x  customize-group       awesome-tab  进行变量设置，也能 看到有哪些变量 设置完 会保存在custom.el
 global-auto-revert-mode   把外部磁盘修改的内容加到 emacs中
 s-p  toggle-chinese-search 中文搜索
+
+多行操作 
+
+全选
+S-a   
+M-x mc/edit-lines  
+C-a  C-e  
+
+选位置
+mc/mark-next-like-this
+
+选单词 字符
+mc/mark-next-like-this-word
+mc/mark-next-like-this-symbol
+
+doom-line 
+M-x nerd-icons-install-fonts 
+安装完之后 .emacs.d 下会有一个 NFM ，要在windows上手动右键安装

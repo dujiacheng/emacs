@@ -4,3 +4,7 @@
 /eshell/
 /server/
 /transient/
+
+ 
+url/cache
+org-persist

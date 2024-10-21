@@ -1,0 +1,3 @@
+﻿;;; -*- lisp-data -*-
+(("~/.emacs.d/")
+ ("~/.emacs.d/quelpa/build/quelpa-use-package/"))
