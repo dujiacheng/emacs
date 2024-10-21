@@ -1,5 +1,13 @@
 ;; -*- lexical-binding: t -*-
-(setq gc-cons-threshold (* 50 1000 1000))
+
+;; 启动时设置较大的垃圾回收阈值
+(setq gc-cons-threshold (* 500 1000 1000))
+
+;; 启动后恢复到一个较合理的阈值，例如 20MB
+(add-hook 'emacs-startup-hook
+          (lambda () (setq gc-cons-threshold (* 50 1000 1000))))
+
+
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
@@ -40,8 +48,8 @@
 (run-at-time "10 sec" nil (lambda () (require 'init-programming)))
 
 
-(require 'init-window)
-;;(run-at-time "11 sec" nil (lambda () (require 'init-window)))
+;;(require 'init-window)
+(run-at-time "11 sec" nil (lambda () (require 'init-window)))
 
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load custom-file 'no-error 'no-message)

@@ -1,4 +1,16 @@
 ;;(server-mode 1)
+(global-display-line-numbers-mode 1)
+;;让鼠标滚动更好用
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
+
+
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+(setq-default cursor-type '(bar . 5))
+(global-hl-line-mode 1)
 
 (electric-pair-mode t)
 (show-paren-mode t)

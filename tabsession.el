@@ -2,7 +2,7 @@
 ;; -------------------------------------------------------------------------
 ;; Tabspaces Session File for Emacs
 ;; -------------------------------------------------------------------------
-;; Created Sun Oct 20 22:43:20 2024
+;; Created Mon Oct 21 21:15:57 2024
 
 ;; Tabs and buffers:
-(setq tabspaces--session-list '((("c:/Users/cleve/Nutstore/1/note/org/daily.org") . "daily.org")))
+(setq tabspaces--session-list '((nil . "*Benchmark Init Results Tabulated*")))

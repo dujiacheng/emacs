@@ -8,3 +8,6 @@
  
 url/cache
 org-persist
+history
+tabsession.el
+bookmarks
