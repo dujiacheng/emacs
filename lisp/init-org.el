@@ -44,6 +44,7 @@
   :ensure t
 )
 
+;; additional features and extensions for Org mode
 (use-package org-contrib
   :pin nongnu
   )

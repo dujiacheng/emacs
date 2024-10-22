@@ -27,38 +27,6 @@ Other buffer group by `awesome-tab-get-group-name' with project name."
      (awesome-tab-get-group-name (current-buffer))))))
 
 
-(use-package pyim)
-
-(defun eh-orderless-regexp (orig_func component)
-    (let ((result (funcall orig_func component)))
-      (pyim-cregexp-build result)))
-
-
-  (defun toggle-chinese-search ()
-    (interactive)
-    (if (not (advice-member-p #'eh-orderless-regexp 'orderless-regexp))
-        (advice-add 'orderless-regexp :around #'eh-orderless-regexp)
-      (advice-remove 'orderless-regexp #'eh-orderless-regexp)))
-
-  (defun disable-py-search (&optional args)
-    (if (advice-member-p #'eh-orderless-regexp 'orderless-regexp)
-        (advice-remove 'orderless-regexp #'eh-orderless-regexp)))
-
-  ;; (advice-add 'exit-minibuffer :after #'disable-py-search)
-(add-hook 'minibuffer-exit-hook 'disable-py-search)
-
-;;modeline上显示我的所有的按键和执行的命令
-(use-package keycast
-  :ensure t
-  :config
-  (progn
-(add-to-list 'global-mode-string '("" keycast-mode-line))
-(keycast-mode t)
-    )
-  )
-
-
-
 (defun my/search-project-for-symbol-at-point ()
   (interactive)
   (if (use-region-p)

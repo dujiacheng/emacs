@@ -38,8 +38,8 @@
 
 
 
-;;(require 'init-org)
-(run-at-time "4 sec" nil (lambda () (require 'init-org)))
+(require 'init-org)
+;;(run-at-time "4 sec" nil (lambda () (require 'init-org)))
 
 ;;(require 'init-keybindings)
 (run-at-time "4 sec" nil (lambda () (require 'init-keybindings)))

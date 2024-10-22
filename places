@@ -1,12 +1,13 @@
 ;;; -*- coding: utf-8; mode: lisp-data -*-
-(("c:/Users/cleve/Nutstore/1/note/org/daily.org" . 9535)
+(("c:/Users/cleve/Downloads/gtd.org" . 24)
+ ("c:/Users/cleve/Downloads/test/"
+  (dired-filename . "c:/Users/cleve/Downloads/test/学习.txt.txt"))
+ ("c:/Users/cleve/Downloads/test/学习.txt.txt" . 113)
+ ("c:/Users/cleve/Nutstore/1/note/org/daily.org" . 9535)
  ("c:/Users/cleve/AppData/Roaming/.emacs.d/quelpa/packages/highlight-global-20140125.113911.el" . 28)
  ("c:/Users/cleve/Documents/emacs.d/config.el" . 31)
  ("c:/Users/cleve/Documents/emacs.d/" . 1257)
  ("c:/Users/cleve/Downloads/test/test1.txt.txt" . 23)
- ("c:/Users/cleve/Downloads/test/学习.txt.txt" . 115)
- ("c:/Users/cleve/Downloads/test/"
-  (dired-filename . "c:/Users/cleve/Downloads/test/学习.txt.txt"))
  ("c:/Program Files/Emacs/"
   (dired-filename . "c:/Program Files/Emacs/emacs-29.1"))
  ("c:/Users/Public/"

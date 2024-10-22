@@ -1,20 +1,21 @@
 ;;(server-mode 1)
-(global-display-line-numbers-mode 1)
+
 ;;让鼠标滚动更好用
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 
 
 
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
 
-(setq-default cursor-type '(bar . 5))
+
+;;高亮当前行，当文本内容很多时可以很容易找到光标的位置。
 (global-hl-line-mode 1)
-
+;;自动补全')'
 (electric-pair-mode t)
+;;显示括号匹配
 (show-paren-mode t)
-(setq make-backup-files nil)
+
+;; 选中处输入会删除原字符
 (delete-selection-mode t)
 
 (use-package recentf
@@ -26,12 +27,23 @@
 (message " 无受想行识，无眼耳鼻舌身意，无色声香味触法，无眼界，乃至无意识界 ")
 (message "  ")
 
+;;显示文件行、列、大小
+(use-package simple
+  :ensure nil
+  :hook (after-init . size-indication-mode)
+  :init
+  (progn
+    (setq column-number-mode t)
+    ))
+    
+
+;;自动加载外部修改过的文件
 (global-auto-revert-mode 1)
-
+;;关闭自动保存文件
 (setq auto-save-default nil)
-
+;;关闭 警告提示音
 (setq ring-bell-function 'ignore)
-
+;;emacs 需要与你确认某个命令时需要输入 (yes or no) 比较麻烦
 (fset 'yes-or-no-p 'y-or-n-p)
 
 

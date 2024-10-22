@@ -12,7 +12,6 @@
 
 (global-set-key (kbd "<f1>") 'func)
 
-(global-set-key (kbd "s-p") 'toggle-chinese-search)
 
 (define-key evil-visual-state-map (kbd "C-r") 'zilongshanren/evil-quick-replace)
 
